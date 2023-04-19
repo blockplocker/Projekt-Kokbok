@@ -1,0 +1,34 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr) ;
+    min-height: 100vh;
+}
+
+.nav{
+    top: 0;
+    grid-column: 1 / 13;
+    grid-row: 1 / 1;
+    background-color: blue;
+}
+.wrapper{
+grid-row: 2 / 19;
+grid-column: 1 / 13;
+background-color: aqua;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr) ;
+}
+.wrapper__hero{
+    border-radius: 5px;
+    background-color: brown;
+    grid-column: 1 / 13;
+    grid-row: 1 / 8;
+    margin: 10px;
+    background-image: url(./bilder/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
