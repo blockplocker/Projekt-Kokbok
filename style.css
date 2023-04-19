@@ -25,10 +25,10 @@ grid-template-columns: repeat(12, 1fr);
 .wrapper__hero{
     border-radius: 5px;
     background-color: brown;
-    grid-column: 1 / 13;
+    grid-column: 2 / 12;
     grid-row: 1 / 8;
     margin: 10px;
-    background-image: url(./bilder/hero.jpg);
+    background-image: url(./bilder/hero2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
