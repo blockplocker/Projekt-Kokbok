@@ -1,34 +1,75 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-body{
+
+body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(20, 1fr) ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px repeat(18, 1fr) 100px;
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav{
+.nav {
     top: 0;
-    grid-column: 1 / 13;
     grid-row: 1 / 1;
-    background-color: blue;
+    background-color: #7FDBDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.wrapper{
-grid-row: 2 / 19;
-grid-column: 1 / 13;
-background-color: aqua;
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr) ;
+
+.nav__upptäck {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+
 }
-.wrapper__hero{
+.omsidan {
     border-radius: 5px;
-    background-color: brown;
-    grid-column: 1 / 13;
-    grid-row: 1 / 8;
-    margin: 10px;
-    background-image: url(./bilder/hero.jpg);
+    background-color: #EDE682;
+    grid-row: 2 / 3;
+    padding: 5px;
+}
+
+.wrapper {
+    
+    background-image: url(./bilder/brooke-lark-wMzx2nBdeng-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    grid-row: 3 / 20;
+    background-color: #7FDBDA;
+    display: grid;
+    padding: 10px 30px;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+    gap: 10px;
+}
+.wrapper__card{
+border-radius: 7px;
+background-color: #7FDBDA;
+height: 400px;
+}
+.wrapper__card__img{
+
+}
+.wrapper__card__tid{
+
+}
+.wrapper__card__text{
+
+}
+
+
+
+.footer {
+    bottom: 0;
+    grid-row: 20 / 21;
+    background-color: #EDE682;
 }
