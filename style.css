@@ -33,7 +33,7 @@ body {
 }
 
 .home {
-    background-image: url(/bilder/home.png);
+    background-image: url(./bilder/home.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 40px;
@@ -111,26 +111,26 @@ body {
 
 .recept1,
 .recept1__bild {
-    background-image: url(/bilder/recept1.jpg);
+    background-image: url(./bilder/recept1.jpg);
 }
 
 .recept2,
 .recept2__bild {
-    background-image: url(/bilder/recept2.jpg);
+    background-image: url(./bilder/recept2.jpg);
 }
 
 .recept3,
 .recept3__bild {
-    background-image: url(/bilder/recept3.jpg);
+    background-image: url(./bilder/recept3.jpg);
 }
 
 .recept4,
 .recept4__bild {
-    background-image: url(/bilder/recept4.jpg);
+    background-image: url(./bilder/recept4.jpg);
 }
 
 .wrapper__card__img {
-    background-image: url(/bilder/recept1.jpg);
+    background-image: url(./bilder/recept1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
