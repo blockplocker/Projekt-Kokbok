@@ -21,33 +21,44 @@ body {
 
 .topbutton {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     display: none;
+    height: 40px;
+    width: 40px;
+    font-size: xxx-large;
+    margin: 0;
 }
 
 .nav {
     top: 0;
     grid-row: 1 / 1;
-    background-color: #ADE498;
-    display: grid; 
+    background-color: #9EB23B;
+    display: grid;
     justify-content: center;
 }
-.nav div{
+
+.nav div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     height: 70px;
 }
+
 .nav__list {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 40px;
+    margin: 0;
+}
+.nav__list a{
+    text-decoration: none;
+    color: #000;
 }
 
 .home {
-    background-image: url(./bilder/home.png);
+    background-image: url(./bilder/home.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 40px;
@@ -58,14 +69,17 @@ body {
     font-family: 'Alfa Slab One', cursive;
     text-decoration: none;
     justify-self: start;
-    color: rgb(92, 88, 29);
+    color: rgb(77, 72, 16);
     font-weight: normal;
     font-size: x-large;
+}
+.nav__namn h1{
+    margin: 0;
 }
 
 .omsidan {
     border-radius: 5px;
-    background-color: #EDE682;
+    background-color: #C7D36F;
     grid-row: 2 / 3;
     padding: 20px 65px;
     font-family: Arial, Helvetica, sans-serif;
@@ -82,25 +96,55 @@ body {
 }
 
 .ingredienser {
-    height: 400px;
+    height: fit-content;
     border-radius: 5px;
-    background-color: #7FDBDA;
+    background-color: #9EB23B;
     padding: 20px;
+}
 
+.ingredienser h2 , .instruktioner h2{
+    margin: 0 0 10px 0;
+}
+
+
+.ingredienser ul li {
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+.ingredienser ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+input:checked ~ span{
+text-decoration: line-through;
+}
+.instruktioner ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .instruktioner {
-    height: 400px;
+    height: fit-content;
     border-radius: 5px;
-    background-color: #7FDBDA;
+    background-color: #9EB23B;
     padding: 20px;
-
 }
+
+.instruktioner ol li {
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+
 
 .wrapper {
     grid-row: 3 / 20;
     display: grid;
     padding: 30px 60px;
+    background-color: #FCF9C6;
 
 
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -119,7 +163,7 @@ body {
     text-decoration: none;
     color: black;
     border-radius: 7px;
-    background-color: #7FDBDA;
+    background-color: #E0DECA;
     height: 300px;
     padding: 10px;
 }
@@ -161,7 +205,29 @@ body {
 .footer {
     bottom: 0;
     grid-row: 20 / 21;
-    background-color: #EDE682;
+    background-color: #9EB23B;
     padding: 20PX;
+
+}
+
+
+
+.home span {
+    position: absolute;
+    left: -99999px;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav {
+        background-color: tomato;
+    }
+
+    .recept__bild {
+        order: -1;
+    }
 
 }

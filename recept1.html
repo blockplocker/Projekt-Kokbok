@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kokbok för studenter</title>
+    <title>recept på </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,15 +13,21 @@
 
     <nav class="nav">
         <div>
-            <a href="index.html" class="home"></a>
+            <a href="index.html" class="home"><span>Till startsidan</span></a>
             <a href="index.html" class="nav__namn">
                 <h1>Student mat</h1>
             </a>
         </div>
         <ul class="nav__list">
-            <li onclick="scrollToElement('recept')">Recept</li>
-            <li onclick="scrollToElement('kontakta')">kontakta oss</li>
-            <li onclick="scrollToElement('omoss')">om oss</li>
+            <a href="index.html">
+                <h2>Recept</h2>
+            </a>
+            <li onclick="scrollToElement('kontakta')">
+                <h2>kontakta oss</h2>
+            </li>
+            <li onclick="scrollToElement('omoss')">
+                <h2>om oss</h2>
+            </li>
         </ul>
     </nav>
 
@@ -29,10 +35,11 @@
 
 
     <div class="wrapper wrapper__recept">
-        <div class="ingredienser">ingredienser:
+        <div class="ingredienser">
+            <h2>ingredienser:</h2>
             <ul>
-                <li>1 - 2  vitlöksklyftor</li>
-                <li>1  kruka basilika</li>
+                <li>1 - 2 vitlöksklyftor</li>
+                <li>1 kruka basilika</li>
                 <li>1 dl färskriven parmesan eller annan lagrad ost, tex västerbotten eller svecia</li>
                 <li>3/4 dl valnötter, pinjenötter eller solrosfrön</li>
                 <li>1 krm salt</li>
@@ -45,18 +52,53 @@
 
         <div class="recept1__bild recept__bild"></div>
 
-        <div class="instruktioner">instruktioner:
+        <div class="instruktioner">
+            <h2>instruktioner:</h2>
             <ol>
-                <li>Skala vitlöksklyftorna. Repa bladen från basilikan. Riv osten.</li>
-                <li>Lägg vitlök, basilika, ost, nötter och salt i en matberedare. Kör tills allt är finfördelat. Allt kan också hackas fint med kniv. Tillsätt oljan, lite i taget, under omrörning eller medan maskinen är på. Rör i vattnet. Smaka av med svartpeppar och eventuellt mer salt.</li>
-                <li>Koka pastan enligt anvisning på förpackningen och blanda den med peston.</li>
-                <li>Till servering: Toppa gärna pesto pastan med lite riven parmesanost.</li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            Skala vitlöksklyftorna. Repa bladen från basilikan. Rivosten.
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            Lägg vitlök, basilika, ost, nötter och salt i en matberedare. Kör tills allt är finfördelat.
+                            Allt kan också hackas fint med kniv. Tillsätt oljan, lite i taget, under omrörning eller
+                            medan
+                            maskinen är på. Rör i vattnet. Smaka av med svartpeppar och eventuellt mer salt.
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            Koka pastan enligt anvisning på förpackningen och blanda den med peston.
+                        </span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            Till servering: Toppa gärna pesto pastan med lite riven parmesanost.
+                        </span>
+                    </label>
+                </li>
             </ol>
         </div>
 
     </div>
-    
-    <div  id="omoss" class="omsidan">På vår webbplats har vi samlat en mängd olika recept som är speciellt anpassade för studenter. Vårt huvudsakliga syfte är att erbjuda en plattform där studenter kan hitta goda, enkla och prisvärda maträtter som passar deras specifika behov. Vi förstår att studenter ofta har begränsad tid, budget och matlagningskunskaper, och därför har vi valt ut recept som är enkla att laga och som inte kräver avancerade köksredskap eller ingredienser. Vårt mål är att underlätta för studenter att hitta måltidsalternativ som är både smakfulla och praktiska för deras livsstil och budget.</div>
+
+    <div id="omoss" class="omsidan"></div>
 
     <footer class="footer">
         <h3 id="kontakta">kontakta oss</h3>
