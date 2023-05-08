@@ -12,25 +12,54 @@
 <body>
 
     <nav class="nav">
-        <a href="index.html" class="home"></a>
-        <a href="index.html" class="nav__namn">Student mat</a>
-        
+        <div>
+            <a href="index.html" class="home"></a>
+            <a href="index.html" class="nav__namn">
+                <h1>Student mat</h1>
+            </a>
+        </div>
+        <ul class="nav__list">
+            <li onclick="scrollToElement('recept')">Recept</li>
+            <li onclick="scrollToElement('kontakta')">kontakta oss</li>
+            <li onclick="scrollToElement('omoss')">om oss</li>
+        </ul>
     </nav>
+
+    <button id="TopButton" class="topbutton" onclick="scrollToTop()">^</button>
 
 
     <div class="wrapper wrapper__recept">
-        
-        <div class="ingredienser">ingredienser: Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum suscipit illum perspiciatis quas sequi temporibus, vitae nobis laborum minus esse, rem ab qui debitis inventore provident quo hic animi. Expedita? </div>
+        <div class="ingredienser">ingredienser:
+            <ul>
+                <li>1 - 2  vitlöksklyftor</li>
+                <li>1  kruka basilika</li>
+                <li>1 dl färskriven parmesan eller annan lagrad ost, tex västerbotten eller svecia</li>
+                <li>3/4 dl valnötter, pinjenötter eller solrosfrön</li>
+                <li>1 krm salt</li>
+                <li>1 dl olivolja, solrosolja eller rapsolja</li>
+                <li>1 - 2 msk vatten</li>
+                <li>svartpeppar</li>
+                <li>300 g spaghetti eller bandspagetti</li>
+            </ul>
+        </div>
 
-        <div class="recept3__bild recept__bild"></div>
+        <div class="recept1__bild recept__bild"></div>
 
-        <div class="instruktioner">instruktioner Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus facilis ex eum minima ratione dolores, aperiam sapiente. Culpa assumenda soluta nemo iste quo rerum perspiciatis recusandae, nihil sunt fuga deleniti! </div>
-        
+        <div class="instruktioner">instruktioner:
+            <ol>
+                <li>Skala vitlöksklyftorna. Repa bladen från basilikan. Riv osten.</li>
+                <li>Lägg vitlök, basilika, ost, nötter och salt i en matberedare. Kör tills allt är finfördelat. Allt kan också hackas fint med kniv. Tillsätt oljan, lite i taget, under omrörning eller medan maskinen är på. Rör i vattnet. Smaka av med svartpeppar och eventuellt mer salt.</li>
+                <li>Koka pastan enligt anvisning på förpackningen och blanda den med peston.</li>
+                <li>Till servering: Toppa gärna pesto pastan med lite riven parmesanost.</li>
+            </ol>
+        </div>
+
     </div>
-
+    
+    <div  id="omoss" class="omsidan">På vår webbplats har vi samlat en mängd olika recept som är speciellt anpassade för studenter. Vårt huvudsakliga syfte är att erbjuda en plattform där studenter kan hitta goda, enkla och prisvärda maträtter som passar deras specifika behov. Vi förstår att studenter ofta har begränsad tid, budget och matlagningskunskaper, och därför har vi valt ut recept som är enkla att laga och som inte kräver avancerade köksredskap eller ingredienser. Vårt mål är att underlätta för studenter att hitta måltidsalternativ som är både smakfulla och praktiska för deras livsstil och budget.</div>
 
     <footer class="footer">
-        <p>kontakta oss</p>
+        <h3 id="kontakta">kontakta oss</h3>
         <ul>
             <li>Gmail: example@gmail.com</li>
             <li>Telefonnummer: 070 000 00 00</li>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 
-
 *,
 *::before,
 *::after {
@@ -14,22 +13,37 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px min-content repeat(17, 1fr) min-content;
+    grid-template-rows: min-content min-content repeat(17, 1fr) min-content;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+
+.topbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
 
 .nav {
     top: 0;
     grid-row: 1 / 1;
     background-color: #ADE498;
+    display: grid; 
+    justify-content: center;
+}
+.nav div{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-
-
+    gap: 20px;
+    height: 70px;
+}
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
 
 .home {
@@ -42,17 +56,18 @@ body {
 
 .nav__namn {
     font-family: 'Alfa Slab One', cursive;
-    font-size: xx-large;
     text-decoration: none;
     justify-self: start;
     color: rgb(92, 88, 29);
+    font-weight: normal;
+    font-size: x-large;
 }
 
 .omsidan {
     border-radius: 5px;
     background-color: #EDE682;
     grid-row: 2 / 3;
-    padding: 20px;
+    padding: 20px 65px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -85,11 +100,11 @@ body {
 .wrapper {
     grid-row: 3 / 20;
     display: grid;
-    padding: 20px 30px;
+    padding: 30px 60px;
 
 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
     min-height: 600px;
 }
 
@@ -105,7 +120,7 @@ body {
     color: black;
     border-radius: 7px;
     background-color: #7FDBDA;
-    height: 400px;
+    height: 300px;
     padding: 10px;
 }
 
@@ -130,7 +145,6 @@ body {
 }
 
 .wrapper__card__img {
-    background-image: url(./bilder/recept1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;

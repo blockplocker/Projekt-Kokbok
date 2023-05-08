@@ -12,52 +12,105 @@
 <body>
 
     <nav class="nav">
-        <a href="index.html" class="nav__namn">Student mat</a>
-        
+        <div>
+            <a href="index.html" class="home"></a>
+            <a href="index.html" class="nav__namn">
+                <h1>Student mat</h1>
+            </a>
+        </div>
+        <ul class="nav__list">
+            <li onclick="scrollToElement('recept')">Recept</li>
+            <li onclick="scrollToElement('kontakta')">kontakta oss</li>
+            <li onclick="scrollToElement('omoss')">om oss</li>
+        </ul>
     </nav>
 
+    <button id="TopButton" class="topbutton" onclick="scrollToTop()">^</button>
 
-    <div class="omsidan">På vår webbplats har vi samlat en mängd olika recept som är speciellt anpassade för studenter. Vårt huvudsakliga syfte är att erbjuda en plattform där studenter kan hitta goda, enkla och prisvärda maträtter som passar deras specifika behov. Vi förstår att studenter ofta har begränsad tid, budget och matlagningskunskaper, och därför har vi valt ut recept som är enkla att laga och som inte kräver avancerade köksredskap eller ingredienser. Vårt mål är att underlätta för studenter att hitta måltidsalternativ som är både smakfulla och praktiska för deras livsstil och budget.</div>
-    <div class="wrapper">
 
-        <a href="recept1.html" class="wrapper__card">
+    <div id="recept" class="wrapper">
+
+        <a href="recept1.html" class=" recept wrapper__card">
             <div class="recept1 wrapper__card__img "> </div>
-            <p class="wrapper__card__text">pasta</p>
-            <p class="wrapper__card__tid">30 minuter</p>
+            <p class="wrapper__card__text">pasta med pesto</p>
+            <p class="wrapper__card__tid">under 30 minuter</p>
         </a>
 
 
-        <a href="recept2.html" class="wrapper__card">
-            <div class="recept2 wrapper__card__img " > </div>
+        <a href="recept2.html" class=" recept wrapper__card">
+            <div class="recept2 wrapper__card__img "> </div>
             <p class="wrapper__card__text">Köttbullar med potatismos</p>
             <p class="wrapper__card__tid">45 minuter</p>
         </a>
 
 
-        <a href="recept3.html" class="wrapper__card">
-            <div class=" recept3 wrapper__card__img " ></div>
+        <a href="recept3.html" class="recept wrapper__card">
+            <div class=" recept3 wrapper__card__img "></div>
             <p class="wrapper__card__text">Kykling med pesto</p>
             <p class="wrapper__card__tid">25 minuter</p>
         </a>
 
 
-        <a href="recept4.html" class="wrapper__card">
+        <a href="recept4.html" class="recept wrapper__card">
             <div class="recept4 wrapper__card__img "></div>
             <p class="wrapper__card__text">Fåtölj. 1900-talets första hälft.</p>
             <p class="wrapper__card__tid">4 dagar</p>
         </a>
 
+
+
+        <a href="recept4.html" class="recept wrapper__card">
+            <div class="recept4 wrapper__card__img "></div>
+            <p class="wrapper__card__text">Fåtölj. 1900-talets första hälft.</p>
+            <p class="wrapper__card__tid">4 dagar</p>
+        </a>
+        <a href="recept4.html" class="recept wrapper__card">
+            <div class="recept4 wrapper__card__img "></div>
+            <p class="wrapper__card__text">Fåtölj. 1900-talets första hälft.</p>
+            <p class="wrapper__card__tid">4 dagar</p>
+        </a>
+        <a href="recept4.html" class="recept wrapper__card">
+            <div class="recept4 wrapper__card__img "></div>
+            <p class="wrapper__card__text">Fåtölj. 1900-talets första hälft.</p>
+            <p class="wrapper__card__tid">4 dagar</p>
+        </a>
+        <a href="recept4.html" class="recept wrapper__card">
+            <div class="recept4 wrapper__card__img "></div>
+            <p class="wrapper__card__text">Fåtölj. 1900-talets första hälft.</p>
+            <p class="wrapper__card__tid">4 dagar</p>
+        </a>
+        <a href="recept4.html" class="recept wrapper__card">
+            <div class="recept4 wrapper__card__img "></div>
+            <p class="wrapper__card__text">Fåtölj. 1900-talets första hälft.</p>
+            <p class="wrapper__card__tid">4 dagar</p>
+        </a>
     </div>
 
 
+
+
+
+
+
+
+
+
+    <div id="omoss" class="omsidan">På vår webbplats har vi samlat en mängd olika recept som är speciellt anpassade för
+        studenter. Vårt huvudsakliga syfte är att erbjuda en plattform där studenter kan hitta goda, enkla och prisvärda
+        maträtter som passar deras specifika behov. Vi förstår att studenter ofta har begränsad tid, budget och
+        matlagningskunskaper, och därför har vi valt ut recept som är enkla att laga och som inte kräver avancerade
+        köksredskap eller ingredienser. Vårt mål är att underlätta för studenter att hitta måltidsalternativ som är både
+        smakfulla och praktiska för deras livsstil och budget.</div>
+
     <footer class="footer">
-        <p>kontakta oss</p>
+        <h3 id="kontakta">kontakta oss</h3>
         <ul>
             <li>Gmail: example@gmail.com</li>
             <li>Telefonnummer: 070 000 00 00</li>
-            <li>Twiter: @exampel</li>
+            <li>Twitter: @exampel</li>
         </ul>
     </footer>
+
 
     <script src="skript.js"></script>
 </body>
