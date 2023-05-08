@@ -14,11 +14,12 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 200px repeat(17, 1fr) 100px;
+    grid-template-rows: 70px min-content repeat(17, 1fr) min-content;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 .nav {
     top: 0;
     grid-row: 1 / 1;
@@ -30,59 +31,116 @@ body {
 
 
 }
-.nav__namn{
+
+.home {
+    background-image: url(/bilder/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.nav__namn {
     font-family: 'Alfa Slab One', cursive;
-    font-size: larger; 
+    font-size: xx-large;
     text-decoration: none;
     justify-self: start;
     color: rgb(92, 88, 29);
 }
+
 .omsidan {
     border-radius: 5px;
     background-color: #EDE682;
     grid-row: 2 / 3;
-    padding: 5px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.recept__bild {
+    border-radius: 5px;
+    background-color: #EDE682;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.ingredienser {
+    height: 400px;
+    border-radius: 5px;
+    background-color: #7FDBDA;
+    padding: 20px;
+
+}
+
+.instruktioner {
+    height: 400px;
+    border-radius: 5px;
+    background-color: #7FDBDA;
+    padding: 20px;
 
 }
 
 .wrapper {
-    
-    /* background-image: url(./bilder/back_img.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
     grid-row: 3 / 20;
     display: grid;
     padding: 20px 30px;
-    
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     min-height: 600px;
 }
-.wrapper__card{
-border-radius: 7px;
-background-color: #7FDBDA;
-height: 400px;
-padding: 10px;
+
+.wrapper__recept {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 50px 50px;
+    gap: 20px;
+
 }
-.recept1{
+
+.wrapper__card {
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    background-color: #7FDBDA;
+    height: 400px;
+    padding: 10px;
+}
+
+.recept1,
+.recept1__bild {
     background-image: url(/bilder/recept1.jpg);
 }
 
-.wrapper__card__img{
+.recept2,
+.recept2__bild {
+    background-image: url(/bilder/recept2.jpg);
+}
+
+.recept3,
+.recept3__bild {
+    background-image: url(/bilder/recept3.jpg);
+}
+
+.recept4,
+.recept4__bild {
+    background-image: url(/bilder/recept4.jpg);
+}
+
+.wrapper__card__img {
     background-image: url(/bilder/recept1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
     width: 100%;
-    
-}
-.wrapper__card__tid{
 
 }
-.wrapper__card__text{
 
-}
+.wrapper__card__tid {}
+
+.wrapper__card__text {}
 
 
 
@@ -90,4 +148,6 @@ padding: 10px;
     bottom: 0;
     grid-row: 20 / 21;
     background-color: #EDE682;
+    padding: 20PX;
+
 }
