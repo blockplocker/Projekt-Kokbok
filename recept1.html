@@ -11,16 +11,17 @@
 
 <body>
 
-    <nav class="nav">
+    <nav class="DM nav">
         <div>
-            <a href="index.html" class="home"><span>Till startsidan</span></a>
-            <a href="index.html" class="nav__namn">
+            <a href="index.html" class="DM home"><span>Till startsidan</span></a>
+            <a href="index.html" class="DM nav__namn">
                 <h1>Student mat</h1>
             </a>
         </div>
-        <ul class="nav__list">
+        <button id="dark-mode-toggle" class="DM darkmode">Toggle Dark Mode</button>
+        <ul class="DM nav__list">
             <a href="index.html">
-                <h2>Recept</h2>
+                <h2 class="DM ">Recept</h2>
             </a>
             <li onclick="scrollToElement('kontakta')">
                 <h2>kontakta oss</h2>
@@ -31,11 +32,13 @@
         </ul>
     </nav>
 
-    <button id="TopButton" class="topbutton" onclick="scrollToTop()">^</button>
 
 
-    <div class="wrapper wrapper__recept">
-        <div class="ingredienser">
+    <button id="TopButton" class="DM topbutton" onclick="scrollToTop()">^</button>
+
+
+    <div id="wrapper" class="DM wrapper wrapper__recept">
+        <div class="DM ingredienser">
             <h2>ingredienser:</h2>
             <ul>
                 <li>1 - 2 vitlöksklyftor</li>
@@ -50,9 +53,9 @@
             </ul>
         </div>
 
-        <div class="recept1__bild recept__bild"></div>
+        <div class="DM recept1__bild recept__bild"></div>
 
-        <div class="instruktioner">
+        <div class="DM instruktioner">
             <h2>instruktioner:</h2>
             <ol>
                 <li>
@@ -98,9 +101,9 @@
 
     </div>
 
-    <div id="omoss" class="omsidan"></div>
+    <div id="omoss" class="DM omsidan"></div>
 
-    <footer class="footer">
+    <footer class="DM footer">
         <h3 id="kontakta">kontakta oss</h3>
         <ul>
             <li>Gmail: example@gmail.com</li>

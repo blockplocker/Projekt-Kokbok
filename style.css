@@ -38,6 +38,7 @@ body {
     justify-content: center;
 }
 
+
 .nav div {
     display: flex;
     align-items: center;
@@ -52,7 +53,8 @@ body {
     gap: 40px;
     margin: 0;
 }
-.nav__list a{
+
+.nav__list a {
     text-decoration: none;
     color: #000;
 }
@@ -73,18 +75,19 @@ body {
     font-weight: normal;
     font-size: x-large;
 }
-.nav__namn h1{
+
+.nav__namn h1 {
     margin: 0;
 }
 
 .omsidan {
-    border-radius: 5px;
     background-color: #C7D36F;
     grid-row: 2 / 3;
     padding: 20px 65px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
 
 .recept__bild {
     border-radius: 5px;
@@ -102,7 +105,9 @@ body {
     padding: 20px;
 }
 
-.ingredienser h2 , .instruktioner h2{
+
+.ingredienser h2,
+.instruktioner h2 {
     margin: 0 0 10px 0;
 }
 
@@ -112,14 +117,17 @@ body {
     margin: 5px;
     padding: 5px;
 }
+
 .ingredienser ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-input:checked ~ span{
-text-decoration: line-through;
+
+input:checked~span {
+    text-decoration: line-through;
 }
+
 .instruktioner ol {
     list-style: none;
     margin: 0;
@@ -156,7 +164,6 @@ text-decoration: line-through;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     padding: 50px 50px;
     gap: 20px;
-
 }
 
 .wrapper__card {
@@ -193,14 +200,11 @@ text-decoration: line-through;
     background-size: cover;
     height: 200px;
     width: 100%;
-
 }
 
 .wrapper__card__tid {}
 
 .wrapper__card__text {}
-
-
 
 .footer {
     bottom: 0;
@@ -210,8 +214,6 @@ text-decoration: line-through;
 
 }
 
-
-
 .home span {
     position: absolute;
     left: -99999px;
@@ -220,11 +222,40 @@ text-decoration: line-through;
     font-size: 40px;
 }
 
-@media screen and (max-width: 800px) {
 
-    .nav {
-        background-color: tomato;
-    }
+
+.darkmode {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    height: 40px;
+    width: fit-content;
+    margin: 0;
+    background-color: #4e4a04;
+    color: #fff;
+}
+
+*.dark-mode {
+    color: #fff;
+}
+
+#omoss.dark-mode {
+    background-color: #6e7624;
+}
+
+#wrapper.dark-mode {
+    background-color: #4e4a04;
+}
+
+.home.dark-mode {
+    background-image: url(./bilder/home\ copy.svg);
+}
+
+
+
+
+
+@media screen and (max-width: 1120px) {
 
     .recept__bild {
         order: -1;

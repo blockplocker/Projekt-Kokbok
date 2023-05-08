@@ -39,3 +39,16 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+
+
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+const elements = document.querySelectorAll(".DM");
+
+function toggleDarkMode() {
+    elements.forEach((element) => {
+        element.classList.toggle("dark-mode");
+    });
+}
+
+darkModeToggle.addEventListener("click", toggleDarkMode)
