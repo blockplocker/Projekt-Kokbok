@@ -37,14 +37,6 @@ body {
     justify-self: start;
     color: rgb(92, 88, 29);
 }
-.nav__upptäck {
-    font-family: 'Alfa Slab One', cursive;
-    font-size: larger; 
-    text-decoration: none;
-    color: rgb(92, 88, 29);
-
-
-}
 .omsidan {
     border-radius: 5px;
     background-color: #EDE682;
