@@ -8,7 +8,7 @@ function scrollToElement(id) {
 
 "use strict";
 
-const array = [1, 2, 3, 4];
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const shuffledArray = array.sort((a, b) => 0.5 - Math.random());
 const collection = document.getElementsByClassName("recept");
 
