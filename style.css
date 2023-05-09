@@ -29,6 +29,9 @@ body {
     font-size: xxx-large;
     margin: 0;
 }
+.topbutton:hover{
+    cursor: pointer;
+}
 
 .nav {
     top: 0;
@@ -52,6 +55,9 @@ body {
     display: flex;
     gap: 40px;
     margin: 0;
+}
+.nav__list li h2:hover{
+    cursor: pointer;
 }
 
 .nav__list a {
@@ -112,10 +118,11 @@ body {
 }
 
 
-.ingredienser ul li {
+.ingredienser ul li,.instruktioner ol li {
     border: 2px solid #000;
     margin: 5px;
     padding: 5px;
+    font-size: x-large;
 }
 
 .ingredienser ul {
@@ -140,13 +147,9 @@ input:checked~span {
     background-color: #9EB23B;
     padding: 20px;
 }
-
-.instruktioner ol li {
-    border: 2px solid #000;
-    margin: 5px;
-    padding: 5px;
+.instruktioner ol li label:hover{
+    cursor: pointer;
 }
-
 
 .wrapper {
     grid-row: 3 / 20;
@@ -161,7 +164,7 @@ input:checked~span {
 }
 
 .wrapper__recept {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     padding: 50px 50px;
     gap: 20px;
 }
@@ -211,7 +214,7 @@ input:checked~span {
     grid-row: 20 / 21;
     background-color: #9EB23B;
     padding: 20PX;
-
+    font-size: large;
 }
 
 .home span {
@@ -234,21 +237,29 @@ input:checked~span {
     background-color: #4e4a04;
     color: #fff;
 }
+.darkmode:hover{
+    cursor: pointer;
+}
+
 
 *.dark-mode {
     color: #fff;
 }
 
-#omoss.dark-mode {
+.omsidan.dark-mode {
     background-color: #6e7624;
 }
 
-#wrapper.dark-mode {
+.wrapper.dark-mode {
     background-color: #4e4a04;
 }
 
 .home.dark-mode {
     background-image: url(./bilder/home\ copy.svg);
+}
+
+.recept.dark-mode {
+    background-color: #302e1c;
 }
 
 
@@ -261,4 +272,23 @@ input:checked~span {
         order: -1;
     }
 
+}
+
+
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.wrapper * {
+    animation: slide-up 0.5s ease-out;
 }
