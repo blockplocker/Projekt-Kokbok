@@ -34,6 +34,8 @@ body {
     cursor: pointer;
 }
 
+/* **************************************** nav ************************************************* */
+
 .nav {
     top: 0;
     grid-row: 1 / 1;
@@ -87,6 +89,8 @@ body {
     margin: 0;
 }
 
+/* **************************************** omsidan ************************************************* */
+
 .omsidan {
     background-color: #C7D36F;
     grid-row: 2 / 3;
@@ -95,6 +99,8 @@ body {
     font-weight: bold;
 }
 
+
+/* **************************************** receptsida ************************************************* */
 
 .recept__bild {
     border-radius: 5px;
@@ -152,6 +158,9 @@ input:checked~span {
     cursor: pointer;
 }
 
+
+/* **************************************** wrapper ************************************************* */
+
 .wrapper {
     grid-row: 3 / 20;
     display: grid;
@@ -206,9 +215,8 @@ input:checked~span {
     width: 100%;
 }
 
-.wrapper__card__tid {}
+/* **************************************** footer ************************************************* */
 
-.wrapper__card__text {}
 
 .footer {
     bottom: 0;
@@ -227,10 +235,11 @@ input:checked~span {
 }
 
 
+/* **************************************** darkmode ************************************************* */
 
 .darkmode {
     position: fixed;
-    right: 40px;
+    right: 30px;
     top: 20px;
     height: 40px;
     width: fit-content;
@@ -242,7 +251,6 @@ input:checked~span {
     cursor: pointer;
 }
 
-
 *.dark-mode {
     color: #fff;
 }
@@ -250,10 +258,9 @@ input:checked~span {
 .omsidan.dark-mode {
     background-color: #6e7624;
 }
-.nav.dark-mode {
-    /* background-color: #302e1c; */
-    background-color: #4e4a04;
-}
+.nav.dark-mode,
+.footer.dark-mode,
+.recept.dark-mode,
 .wrapper.dark-mode div{
     background-color: #4e4a04;
 }
@@ -261,23 +268,15 @@ input:checked~span {
 .wrapper.dark-mode {
     background-color: #302e1c;
 }
-.footer.dark-mode{
-    /* background-color: #302e1c; */
-    background-color: #4e4a04;
-
-}
 
 .home.dark-mode {
     background-image: url(./bilder/home\ copy.svg);
 }
 
-.recept.dark-mode {
-    /* background-color: #302e1c; */
-    background-color: #4e4a04;
-}
 
 
 
+/* **************************************** media ************************************************* */
 
 
 @media screen and (max-width: 1300px) {
