@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <nav class="DM nav">
         <div>
             <a href="index.html" class="DM home"><span>Till startsidan</span></a>
@@ -20,22 +19,28 @@
         </div>
         <button id="dark-mode-toggle" class="DM darkmode">Toggle Dark Mode</button>
         <ul class="DM nav__list">
-            <a href="index.html">
-                <h2 class="DM ">Recept</h2>
-            </a>
+            <li>
+                <a href="index.html">
+                    <h2 class="DM ">
+                        Recept
+                    </h2>
+                </a>
+            </li> 
             <li onclick="scrollToElement('kontakta')">
-                <h2>kontakta oss</h2>
+                <h2>
+                    kontakta oss
+                </h2>
             </li>
             <li onclick="scrollToElement('omoss')">
-                <h2>om oss</h2>
+                <h2>
+                    om oss
+                </h2>
             </li>
         </ul>
     </nav>
 
-
-
-    <button id="TopButton" class="DM topbutton" onclick="scrollToTop()">^</button>
-
+    <button id="TopButton" class="DM topbutton" onclick="scrollToTop()">
+        ^</button>
 
     <div id="wrapper" class="DM wrapper wrapper__recept">
         <div class="DM ingredienser">
@@ -66,7 +71,6 @@
                         </span>
                     </label>
                 </li>
-
                 <li>
                     <label>
                         <input type="checkbox">
@@ -78,7 +82,6 @@
                         </span>
                     </label>
                 </li>
-
                 <li>
                     <label>
                         <input type="checkbox">
@@ -87,7 +90,6 @@
                         </span>
                     </label>
                 </li>
-
                 <li>
                     <label>
                         <input type="checkbox">
@@ -98,11 +100,9 @@
                 </li>
             </ol>
         </div>
-
     </div>
 
     <div id="omoss" class="DM omsidan"></div>
-
     <footer class="DM footer">
         <h3 id="kontakta">kontakta oss</h3>
         <ul>
@@ -111,7 +111,6 @@
             <li>Twiter: @exampel</li>
         </ul>
     </footer>
-
     <script src="skript.js"></script>
 </body>
 

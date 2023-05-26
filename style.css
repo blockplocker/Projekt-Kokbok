@@ -26,8 +26,9 @@ body {
     display: none;
     height: 40px;
     width: 40px;
-    font-size: xxx-large;
+    font-size: 45px;
     margin: 0;
+    border-radius: 8px;
 }
 .topbutton:hover{
     cursor: pointer;
@@ -228,8 +229,8 @@ input:checked~span {
 
 
 .darkmode {
-    position: absolute;
-    right: 30px;
+    position: fixed;
+    right: 40px;
     top: 20px;
     height: 40px;
     width: fit-content;
@@ -266,13 +267,14 @@ input:checked~span {
 
 
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1300px) {
 
     .recept__bild {
         order: -1;
     }
-
+    
 }
+
 
 
 
